@@ -65,6 +65,14 @@ textarea {
     color: red;
 }
 
+.c-green {
+    color: green;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * BUTTONS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .btn-green {
@@ -73,6 +81,12 @@ textarea {
     color: #fff;
     padding: 0.5em 1em;
     border-radius: 2px;
+}
+
+.btn-green:hover {
+    -webkit-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.7);
 }
 
 .btn-bars {
@@ -322,7 +336,6 @@ textarea {
     justify-content: center;
 }
 
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HOME -> POPULAR COURSES * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .popular-courses {
@@ -366,10 +379,72 @@ textarea {
     color: #222222;
 }
 
-
 .popular-courses .card-photo img {
     width: 100%;
 }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HOME -> ADVANTAGES * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.advantages {
+    padding: 40px 0;
+}
+
+.advantages h2 {
+    font-weight: 400;
+}
+
+.advantages ul {
+    padding: 10px 20px; 
+}
+
+.advantages ul li:before { 
+    content: "\f00c"; 
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 20px;
+    color: green;
+    margin-right: 10px;
+}
+
+.advantages ul li {
+    padding: 10px 0;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * CATALOG DOWNLOAD * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.catalog-download {
+    padding: 30px;
+    display: flex;
+    background: #F8F8F8;
+    border-left: 4px solid #0FBE7C;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-download h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.catalog-download div:first-child {
+    flex-basis: 70%;
+    margin-right: 20px;
+}
+
+.catalog-download .btn-green {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0.5em 2em;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -475,15 +550,25 @@ textarea {
     .popular-courses .card:not(:last-child) {
         margin-right: 0;
     }
+
+    .catalog-download {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .catalog-download .btn-green {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .slide-title {
         font-size: 22px;
     }
+
     .slide .btn-green {
         padding: 0.75em 2em;
     }
+
     .slide-text {
         font-size: 14px;
     }
@@ -493,10 +578,12 @@ textarea {
     .slide {
         height: 430px;
     }
+
     .slide-title {
         font-size: 18px;
         margin-bottom: 10px;
     }
+
     .slide .btn-green {
         margin-top: 10px;
         padding: 0.5em 2em;
