@@ -394,11 +394,11 @@ textarea {
 }
 
 .advantages ul {
-    padding: 10px 20px; 
+    padding: 10px 20px;
 }
 
-.advantages ul li:before { 
-    content: "\f00c"; 
+.advantages ul li:before {
+    content: "\f00c";
     font-family: FontAwesome;
     display: inline-block;
     font-size: 20px;
@@ -438,17 +438,57 @@ textarea {
     padding: 0.5em 2em;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HOME QUESTIONS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.home-questions {
+    padding: 40px 0;
+}
+
+.home-questions .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-questions .card {
+    flex-basis: 50%;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+.home-questions .card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.home-questions .card ul {
+    padding-left: 15px;
+}
+
+.home-questions .card ul li {
+    color: #666666;
+    padding: 8px 0;
+}
+
+.home-questions .card ul li a {
+    color: #0FBE7C;
+}
 
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HOME -> FOOTER HERO * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+.footer-hero h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
 
-
-
-
-
-
-
-
+.footer-hero ul {
+    padding: 30px 5px;
+}
+.footer-hero ul li {
+    list-style: decimal inside;
+    color: #666666;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX-WIDTH 768px * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -526,6 +566,10 @@ textarea {
         flex-basis: 44%;
         margin-bottom: 40px;
     }
+
+    .home-questions .cards {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -555,6 +599,7 @@ textarea {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .catalog-download .btn-green {
         margin-top: 10px;
     }
