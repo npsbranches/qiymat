@@ -389,6 +389,7 @@ textarea {
     .navbar ul {
         display: none;
         position: absolute;
+        z-index: 2;
         flex-direction: column;
         width: 100%;
         left: 0;
