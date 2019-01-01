@@ -668,7 +668,23 @@ table td {
     margin-top: 15px;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * ABOUT -> ABOUT DOCUMENTS * * * * * * * * * * * * * * * * * * * * * */
 
+.about-sertificate-title {
+    color: #666666;
+    font-size: 16px;
+    padding: 1em 0;
+}
+
+.sertificate-photo {
+    max-width: 400px;
+    width: 100%;
+}
+
+.sertificate-photo img {
+    width: 100%;
+    object-fit: contain;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * SIDEBAR * * * * * * * * * * * * * * * * * * * * * * * * * */
 
