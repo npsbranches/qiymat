@@ -445,7 +445,9 @@ iframe {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HOME QUESTIONS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .home-questions {
+    margin: 20px 0;
     padding: 40px 0;
+    background: #0FBE7C;
 }
 
 .home-questions .cards {
@@ -463,6 +465,7 @@ iframe {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .home-questions .card ul {
@@ -470,12 +473,12 @@ iframe {
 }
 
 .home-questions .card ul li {
-    color: #666666;
+    color: #fff;
     padding: 8px 0;
 }
 
 .home-questions .card ul li a {
-    color: #0FBE7C;
+    color: #fff;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HOME -> FOOTER HERO * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -509,6 +512,10 @@ iframe {
     align-items: flex-start;
 }
 
+.footer .column:not(:last-child) {
+    padding-right: 30px;
+}
+
 .footer h4 {
     font-size: 24px;
     font-weight: 400;
@@ -538,6 +545,11 @@ iframe {
 .search input {
     background: #fff;
     height: 100%;
+    padding: 0 1em;
+}
+
+.search input::placeholder {
+    font-size: 14px;
 }
 
 .footer .search {
@@ -557,11 +569,47 @@ iframe {
     font-size: 14px;
 }
 
-.footer-menu {
+.menu-footer {
     padding: 15px;
 }
 
+.menu-footer li a {
+    font-size: 14px;
+    padding: 0.5em 0;
+    display: block;
+    border-bottom: 1px solid #444444;
+}
+
+.footer .column:nth-child(1) a {
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+.footer .column:nth-child(3) {
+    color: gray;
+}
+
+.footer .column:nth-child(3) span{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer .column:nth-child(3) h4{
+    color: #fff;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX-WIDTH 768px * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 992px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer .column {
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .btn-bars {
@@ -640,6 +688,11 @@ iframe {
 
     .home-questions .cards {
         flex-direction: column;
+    }
+
+    .footer .column {
+        flex-basis: 100%;
+        padding-right: 0 !important;
     }
 }
 
