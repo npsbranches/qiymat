@@ -42,20 +42,24 @@ textarea {
     background: none;
 }
 
+iframe {
+    width: 100%;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .page {
     -webkit-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.7);
-    max-width: 1040px;
+    max-width: 1170px;
     width: 100%;
     margin: auto;
     background: #fff;
 }
 
 .wrapper {
-    max-width: 1024px;
+    max-width: 1170px;
     width: 100%;
     margin: auto;
     padding: 0 15px;
@@ -98,14 +102,6 @@ textarea {
 .btn-bars i {
     color: #fff;
     font-size: 26px;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-.header {
-    max-width: 1040px;
-    margin: auto;
-    background: #fff;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER -> MARQUEE * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -166,6 +162,14 @@ textarea {
     animation: scroll 30s infinite linear;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.header {
+    max-width: 1170px;
+    margin: auto;
+    background: #fff;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER -> MIDDLE * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .header-middle {
@@ -216,7 +220,7 @@ textarea {
 .navbar ul {
     background: #a03333;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 50px;
     align-items: center;
 }
@@ -474,7 +478,6 @@ textarea {
     color: #0FBE7C;
 }
 
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HOME -> FOOTER HERO * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .footer-hero h3 {
@@ -488,6 +491,74 @@ textarea {
 .footer-hero ul li {
     list-style: decimal inside;
     color: #666666;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.footer {
+    background: #333333;
+    color: #f8f8f8;
+    padding: 30px;
+    display: flex;
+}
+
+.footer .column {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer h4 {
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 2px solid #0FBE7C;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+}
+
+.search {
+    height: 35px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.search i {
+    height: 35px;
+    width: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #0FBE7C;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search input {
+    background: #fff;
+    height: 100%;
+}
+
+.footer .search {
+    margin-bottom: 30px;
+}
+.footer iframe {
+    width: 100%;
+}
+
+.footer p {
+    color: #a8a8a8;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #d4d4d4;
+    font-size: 14px;
+}
+
+.footer-menu {
+    padding: 15px;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX-WIDTH 768px * * * * * * * * * * * * * * * * * * * * * * * * * */
