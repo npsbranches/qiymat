@@ -13,7 +13,6 @@ li {
 }
 
 body {
-    height: 3000px;
     background-image: url('../images/body-bg.png');
     background-position: center center;
     background-size: auto;
@@ -45,6 +44,18 @@ textarea {
 iframe {
     width: 100%;
 }
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    color: #666666;
+}
+
+table td {
+    border: 1px solid #EAEAEA;
+    padding: 5px 10px;
+}
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -479,6 +490,7 @@ iframe {
 
 .home-questions .card ul li a {
     color: #fff;
+    text-decoration: underline;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HOME -> FOOTER HERO * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -491,9 +503,109 @@ iframe {
 .footer-hero ul {
     padding: 30px 5px;
 }
+
 .footer-hero ul li {
     list-style: decimal inside;
     color: #666666;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT -> MAIN ABOUT * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.about-title {
+    border-bottom: 1px solid #EAEAEA;
+    padding: 20px 50px;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) inset;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) inset;
+}
+
+.about-title h2 {
+    font-weight: 400;
+}
+
+.about {
+    padding: 20px;
+    padding-bottom: 40px;
+    display: flex;
+}
+
+.about-cover img {
+    width: 100%;
+}
+
+.about-left {
+    flex-basis: 80%;
+    padding-right: 30px;
+}
+
+.about-tabs {
+    margin: 20px 0;
+}
+
+.about-tabs a{
+    text-transform: uppercase;
+    color: #0FBE7C;
+}
+
+.about-left p{
+    color: #666666;
+    padding: 40px 0;
+}
+
+.interesting-links h4{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0.2em 0;
+}
+
+.interesting-links li a {
+    color: #0FBE7C;
+}
+
+.interesting-links li a:hover {
+    color: #0FBE7C;
+    text-decoration: underline;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * SIDEBAR * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.sidebar {
+    max-width: 300px;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .search input {
+    border: 1px solid #EAEAEA;
+}
+
+.sidebar .search {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.sidebar .search input {
+    width: 100%;
+}
+
+.sidebar h4 {
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 2px solid #0FBE7C;
+    padding: 5px 0;
+}
+
+.menu-sidebar {
+    padding: 15px;
+}
+
+.menu-sidebar a {
+    color: #0FBE7C;
+    display: block;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #EAEAEA;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -555,6 +667,7 @@ iframe {
 .footer .search {
     margin-bottom: 30px;
 }
+
 .footer iframe {
     width: 100%;
 }
@@ -589,12 +702,12 @@ iframe {
     color: gray;
 }
 
-.footer .column:nth-child(3) span{
+.footer .column:nth-child(3) span {
     font-size: 14px;
     margin-bottom: 15px;
 }
 
-.footer .column:nth-child(3) h4{
+.footer .column:nth-child(3) h4 {
     color: #fff;
 }
 
@@ -604,6 +717,7 @@ iframe {
     .footer {
         flex-wrap: wrap;
     }
+
     .footer .column {
         flex-basis: 50%;
         margin-bottom: 30px;
