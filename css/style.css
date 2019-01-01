@@ -88,6 +88,28 @@ table td {
     font-weight: 700;
 }
 
+.fw-400 {
+    font-weight: 400;
+}
+
+.list-style-disc li {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+/* * * * * * * * * * * * * * * * * * *  * UNIVERSAL BLOCKS & ELEMENTS * * * * * * * * * * * * * * * * * * * * * */
+
+.page-title {
+    border-bottom: 1px solid #EAEAEA;
+    padding: 20px 50px;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) inset;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) inset;
+}
+
+.page-title h2 {
+    font-weight: 400;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * BUTTONS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .btn-green {
@@ -160,9 +182,7 @@ table td {
     color: #fff;
     font-weight: 600;
     font-size: 24px;
-    padding-top: 5px;
-    padding-bottom: 15px;
-
+    padding: 7px 0;
 }
 
 .marquee span {
@@ -425,9 +445,9 @@ table td {
     padding: 10px 0;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * CATALOG DOWNLOAD * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HOT BLOCK * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-.catalog-download {
+.hot-block {
     padding: 30px;
     display: flex;
     background: #F8F8F8;
@@ -436,21 +456,58 @@ table td {
     align-items: center;
 }
 
-.catalog-download h3 {
+.hot-block h3 {
     font-size: 24px;
     font-weight: 600;
     color: #222222;
 }
 
-.catalog-download div:first-child {
+.hot-block div:first-child {
     flex-basis: 70%;
     margin-right: 20px;
 }
 
-.catalog-download .btn-green {
+.hot-block .btn-green {
     font-size: 20px;
     font-weight: 700;
     padding: 0.5em 2em;
+}
+
+.hot-block_middle {
+    padding: 20px 15px;
+    margin: 20px 0;
+}
+
+.hot-block_middle p {
+    padding: 0 !important;
+}
+
+.hot-block_middle h3 {
+    font-size: 22px;
+}
+
+.hot-block_middle .btn-green {
+    padding: 0.5em 1em;
+    font-size: 18px;
+}
+
+.hot-block_sidebar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hot-block_sidebar h3 {
+    font-size: 20px;
+}
+
+.hot-block_sidebar p {
+    margin-top: 10px;
+}
+
+.hot-block_sidebar .btn-green {
+    font-size: 16px;
+    padding: 0.5em 1em;
+    margin-top: 10px;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HOME QUESTIONS * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -511,29 +568,29 @@ table td {
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT -> MAIN ABOUT * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-.about-title {
-    border-bottom: 1px solid #EAEAEA;
-    padding: 20px 50px;
-    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) inset;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) inset;
-}
-
-.about-title h2 {
-    font-weight: 400;
-}
-
 .about {
     padding: 20px;
     padding-bottom: 40px;
     display: flex;
 }
 
+.about hr {
+    border: none;
+    border-top: 1px solid #EAEAEA;
+}
+
+.about-title {
+    font-size: 24px;
+    padding: 20px 0 10px 0;
+}
+
 .about-cover img {
     width: 100%;
 }
 
+
 .about-left {
-    flex-basis: 80%;
+    width: 70%;
     padding-right: 30px;
 }
 
@@ -541,18 +598,21 @@ table td {
     margin: 20px 0;
 }
 
-.about-tabs a{
+.about-tabs a {
     text-transform: uppercase;
     color: #0FBE7C;
 }
 
-.about-left p{
+.about-left p {
     color: #666666;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
-.interesting-links h4{
-    font-size: 18px;
+.about ul li {
+    color: #666666;
+}
+
+.interesting-links h4 {
     font-weight: 400;
     padding: 0.2em 0;
 }
@@ -565,6 +625,49 @@ table td {
     color: #0FBE7C;
     text-decoration: underline;
 }
+
+.about table a {
+    color: #0FBE7C;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT -> TEAM ABOUT * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.team-slider img {
+    width: 100%;
+}
+
+.team-slider {
+    width: 100%;
+    margin: 20px 0 50px 0;
+}
+
+.team-slide {
+    position: relative;
+}
+
+.team-slide-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+}
+
+.team-slide-info p {
+    color: #fff;
+    padding: 0.5em 1em;
+}
+
+.about-team ul {
+    padding: 15px;
+}
+
+.about-team .fw-400 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * SIDEBAR * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -722,6 +825,7 @@ table td {
         flex-basis: 50%;
         margin-bottom: 30px;
     }
+
     .about {
         flex-direction: column;
     }
@@ -731,15 +835,17 @@ table td {
         padding: 0;
         margin: 20px 0;
     }
+
     .about table {
-		overflow-x: auto;
+        overflow-x: auto;
         display: block;
         width: 100%;
-	}
+    }
+
     .about-left {
-        flex-basis: 100%;
+        width: 100%;
         padding-right: 0;
-    }    
+    }
 }
 
 
@@ -851,12 +957,12 @@ table td {
         margin-right: 0;
     }
 
-    .catalog-download {
+    .hot-block {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .catalog-download .btn-green {
+    .hot-block .btn-green {
         margin-top: 10px;
     }
 }

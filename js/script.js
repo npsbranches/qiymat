@@ -14,8 +14,21 @@ $('.slider').owlCarousel({
     animateOut: 'fadeOut',
     dots: true,
     loop: true,
-    // autoplay: true,
-    // autoplayTimeout: 4000,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    dotClass: ["slider-indicator"],
+    dotsClass: ["slider-indicators"]
+})
+
+$('.team-slider').owlCarousel({
+    items: 1,
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
+    dots: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
     autoplayHoverPause: true,
     dotClass: ["slider-indicator"],
     dotsClass: ["slider-indicators"]
