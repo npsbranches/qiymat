@@ -731,23 +731,15 @@ table td {
         padding: 0;
         margin: 20px 0;
     }
-    table {
+    .about table {
 		overflow-x: auto;
         display: block;
         width: 100%;
 	}
-    /* .about-tabs {
-        width: 100%;
-    }
-
-    .about-tabs tr{
-        display:    inline-flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .about-tabs td{
-        width: 100%;
-    } */
+    .about-left {
+        flex-basis: 100%;
+        padding-right: 0;
+    }    
 }
 
 
