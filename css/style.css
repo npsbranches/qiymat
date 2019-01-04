@@ -97,6 +97,10 @@ table td {
     list-style-position: inside;
 }
 
+.list-style-number li {
+    list-style: decimal;
+    list-style-position: inside;
+}
 /* * * * * * * * * * * * * * * * * * *  * UNIVERSAL BLOCKS & ELEMENTS * * * * * * * * * * * * * * * * * * * * * */
 
 .page-title {
@@ -726,6 +730,36 @@ table td {
     padding: 0.5em 0;
     border-bottom: 1px solid #EAEAEA;
 }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * COURSES * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.courses-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.courses-page-link {
+    color: #0FBE7C;
+    font-weight: 700;
+}
+
+.courses-card {
+    margin: 30px 0;
+}
+
+.kursy-smetchikov .list-style-number li{
+
+    margin-bottom: 10px;
+    padding: 0 15px; 
+}
+
+
+
+
+
+
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
