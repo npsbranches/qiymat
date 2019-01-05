@@ -81,7 +81,7 @@ table td {
 }
 
 .c-green {
-    color: green;
+    color: #0FBE7C;
 }
 
 .fw-bold {
@@ -100,18 +100,6 @@ table td {
 .list-style-number li {
     list-style: decimal;
     list-style-position: inside;
-}
-/* * * * * * * * * * * * * * * * * * *  * UNIVERSAL BLOCKS & ELEMENTS * * * * * * * * * * * * * * * * * * * * * */
-
-.page-title {
-    border-bottom: 1px solid #EAEAEA;
-    padding: 20px 50px;
-    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) inset;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) inset;
-}
-
-.page-title h2 {
-    font-weight: 400;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * BUTTONS * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -288,7 +276,12 @@ table td {
     height: auto;
     width: 250px;
     background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
-    border-top: 4px solid #0FBE7C;
+    border-top: 2px solid #0FBE7C;
+}
+
+.navbar .sub-menu .sub-menu {
+    top: 0;
+    left: 250px;
 }
 
 .sub-menu li {
@@ -441,7 +434,7 @@ table td {
     font-family: FontAwesome;
     display: inline-block;
     font-size: 20px;
-    color: green;
+    color: #0FBE7C;
     margin-right: 10px;
 }
 
@@ -461,9 +454,10 @@ table td {
 }
 
 .hot-block h3 {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 24px !important;
+    font-weight: 600 !important;
     color: #222222;
+    padding: 0 !important;
 }
 
 .hot-block div:first-child {
@@ -570,55 +564,76 @@ table td {
     color: #666666;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT -> MAIN ABOUT * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * PAGES TEMPLATE (ABOUT, COURSES) * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-.about {
+.page-wrapper {
     padding: 20px;
-    padding-bottom: 40px;
     display: flex;
+    justify-content: space-between;
 }
 
-.about hr {
+.page-title {
+    border-bottom: 1px solid #EAEAEA;
+    padding: 20px 50px;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) inset;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) inset;
+}
+
+.page-title h2 {
+    font-weight: 400;
+}
+
+.page-cover img {
+    width: 100%;
+}
+
+.page-wrapper hr {
     border: none;
     border-top: 1px solid #EAEAEA;
 }
 
-.about-title {
+.page-content h3 {
     font-size: 24px;
-    padding: 20px 0 10px 0;
+    padding: 10px 0;
 }
 
-.about-cover img {
-    width: 100%;
+.page-content h4 {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 10px 0;
 }
 
-
-.about-left {
+.page-content {
     width: 70%;
-    padding-right: 30px;
+    padding-right: 15px;
 }
 
-.about-tabs {
-    margin: 20px 0;
-}
-
-.about-tabs a {
-    text-transform: uppercase;
-    color: #0FBE7C;
-}
-
-.about-left p {
-    color: #666666;
-    padding: 20px 0;
-}
-
-.about ul li {
+.page-content p {
     color: #666666;
 }
 
-.interesting-links h4 {
+.page-wrapper ul li {
+    color: #666666;
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.page-wrapper ul {
+    padding: 0 15px;
+}
+
+.interesting-links span {
+    font-size: 16px;
     font-weight: 400;
     padding: 0.2em 0;
+}
+
+.interesting-links ul {
+    padding: 0 !important;
+}
+
+.interesting-links li {
+    list-style: none !important;
 }
 
 .interesting-links li a {
@@ -630,72 +645,12 @@ table td {
     text-decoration: underline;
 }
 
-.about table a {
-    color: #0FBE7C;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT -> TEAM ABOUT * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-.team-slider img {
-    width: 100%;
-}
-
-.team-slider {
-    width: 100%;
-    margin: 20px 0 50px 0;
-}
-
-.team-slide {
-    position: relative;
-}
-
-.team-slide-info {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    width: 100%;
-}
-
-.team-slide-info p {
-    color: #fff;
-    padding: 0.5em 1em;
-}
-
-.about-team ul {
-    padding: 15px;
-}
-
-.about-team .fw-400 {
-    font-size: 20px;
-    margin-top: 15px;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * ABOUT -> ABOUT DOCUMENTS * * * * * * * * * * * * * * * * * * * * * */
-
-.about-sertificate-title {
-    color: #666666;
-    font-size: 16px;
-    padding: 1em 0;
-}
-
-.sertificate-photo {
-    max-width: 400px;
-    width: 100%;
-}
-
-.sertificate-photo img {
-    width: 100%;
-    object-fit: contain;
-}
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * SIDEBAR * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .sidebar {
-    max-width: 300px;
+    max-width: 30%;
     width: 100%;
-    padding: 0 15px;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -720,10 +675,17 @@ table td {
     padding: 5px 0;
 }
 
+.sidebar ul li {
+    list-style: none !important;
+}
+
 .menu-sidebar {
     padding: 15px;
 }
 
+.menu-sidebar ul {
+    padding: 0 !important;
+}
 .menu-sidebar a {
     color: #0FBE7C;
     display: block;
@@ -731,13 +693,67 @@ table td {
     border-bottom: 1px solid #EAEAEA;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * COURSES * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-.courses-title {
-    font-size: 24px;
-    font-weight: 400;
-    margin-top: 20px;
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT -> MAIN ABOUT * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.about-tabs {
+    margin: 20px 0;
 }
+
+.about-tabs a {
+    text-transform: uppercase;
+    color: #0FBE7C;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT -> TEAM ABOUT * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.team-slider img {
+    width: 100%;
+}
+
+.team-slider {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.team-slide {
+    position: relative;
+}
+
+.team-slide-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+}
+
+.team-slide-info p {
+    color: #fff;
+    padding: 0.5em 1em;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * ABOUT -> ABOUT DOCUMENTS * * * * * * * * * * * * * * * * * * * * * */
+
+.about-sertificate-title {
+    color: #666666;
+    font-size: 16px;
+    padding: 1em 0;
+}
+
+.sertificate-photo {
+    max-width: 400px;
+    width: 100%;
+}
+
+.sertificate-photo img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * COURSES * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .courses-page-link {
     color: #0FBE7C;
@@ -745,21 +761,22 @@ table td {
 }
 
 .courses-card {
-    margin: 30px 0;
+    margin: 10px 0 30px 0;
 }
 
-.kursy-smetchikov .list-style-number li{
+.courses-card a {
+    color: #0FBE7C;
+    font-weight: 700;
+}
 
+.kursy-smetchikov .list-style-number li {
     margin-bottom: 10px;
-    padding: 0 15px; 
+    padding: 0 15px;
 }
 
-
-
-
-
-
-
+.kursy-lineyno .list-style-disc {
+    padding: 0 15px;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -876,7 +893,7 @@ table td {
         margin-bottom: 30px;
     }
 
-    .about {
+    .page-wrapper {
         flex-direction: column;
     }
 
@@ -886,13 +903,13 @@ table td {
         margin: 20px 0;
     }
 
-    .about table {
+    .page-wrapper table {
         overflow-x: auto;
         display: block;
         width: 100%;
     }
 
-    .about-left {
+    .page-content {
         width: 100%;
         padding-right: 0;
     }
