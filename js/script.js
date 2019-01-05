@@ -31,8 +31,12 @@ $('.team-slider').owlCarousel({
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
     dotClass: ["slider-indicator"],
-    dotsClass: ["slider-indicators"]
+    dotsClass: ["slider-indicators"],
+    nav: true,
+    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    navClass: ["photography-prev", "photography-next"]
 })
+
 
 
 

@@ -800,6 +800,49 @@ table td {
     text-decoration: underline;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * GALLERY * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.gallery-slider .slider-indicator {
+    margin: 5px;
+    width: 8px;
+    height: 8px;
+    background: #666666;
+  
+}
+
+.gallery-slider .slider-indicator.active {
+    background: #0FBE7C;
+}
+
+.gallery-slider .slider-indicators {
+    position: relative;
+    top: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-slider .photography-prev {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    top: calc(50% - 40px);
+}
+
+.gallery-slider .photography-next {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    top: calc(50% - 40px);
+    right: 0;
+}
+
+.gallery-slider .photography-prev i,
+.gallery-slider .photography-next i {
+    color: #fff;
+    font-size: 38px;
+
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
