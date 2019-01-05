@@ -844,6 +844,32 @@ table td {
 
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * CONTACTS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.contacts-form label {
+    display: block;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+    background: #f8f8f8;
+    width: 100%;
+    border: 1px solid #EBEBEB;
+    padding: 10px;
+}
+
+.contacts-form div {
+    margin-bottom: 20px;
+}
+
+.contacts-form .btn-green {
+    font-size: 16px;
+    padding: 0.75em 2em;
+}
+
+
+
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .footer {
