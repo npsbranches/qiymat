@@ -608,6 +608,10 @@ table td {
     padding-right: 15px;
 }
 
+.page-content table {
+    width: 100%;
+}
+
 .page-content p {
     color: #666666;
 }
@@ -615,11 +619,10 @@ table td {
 .page-wrapper ul li {
     color: #666666;
     list-style: disc;
-    list-style-position: inside;
 }
 
 .page-wrapper ul {
-    padding: 0 15px;
+    padding: 0 30px;
 }
 
 .interesting-links span {
@@ -963,6 +966,10 @@ table td {
         padding: 0;
     }
 
+    .navbar .sub-menu .sub-menu {
+        left: 0;
+        padding-left: 20px;
+    }
     .sub-menu li {
         border-bottom: none;
         width: auto;
