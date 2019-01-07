@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 a {
@@ -61,7 +62,6 @@ table td {
 
 .page {
     -webkit-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.7);
     max-width: 1170px;
     width: 100%;
@@ -114,14 +114,15 @@ table td {
 
 .btn-green:hover {
     -webkit-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.7);
 }
 
 .btn-bars {
     height: 100%;
     display: none;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .btn-bars i {
@@ -143,25 +144,15 @@ table td {
     }
 }
 
-@-moz-keyframes scroll {
-    0% {
-        -moz-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-
-    100% {
-        -moz-transform: translate(-100%, 0);
-        transform: translate(-100%, 0)
-    }
-}
-
 @keyframes scroll {
     0% {
-        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
     }
 
     100% {
-        transform: translate(-100%, 0)
+        -webkit-transform: translate(-100%, 0);
+                transform: translate(-100%, 0)
     }
 }
 
@@ -181,7 +172,6 @@ table td {
     display: inline-block;
     padding-left: 100%;
     -webkit-animation: scroll 30s infinite linear;
-    -moz-animation: scroll 30s infinite linear;
     animation: scroll 30s infinite linear;
 }
 
@@ -196,13 +186,21 @@ table td {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER -> MIDDLE * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .header-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 15px 0;
 }
 
 .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -218,9 +216,16 @@ table td {
 }
 
 .header-numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #666666;
     text-align: right;
 }
@@ -236,8 +241,12 @@ table td {
 
 .language-switcher {
     margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .language-switcher a {
@@ -254,8 +263,10 @@ table td {
 .language-switcher a img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }
 
 
@@ -272,16 +283,25 @@ table td {
 
 .navbar ul {
     background: #a03333;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 50px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .navbar ul li {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .navbar a {
@@ -293,6 +313,8 @@ table td {
 }
 
 .navbar .menu-item-has-children:hover>.sub-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -300,8 +322,13 @@ table td {
     position: absolute;
     z-index: 2;
     display: none;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     top: 48px;
     height: auto;
     width: 250px;
@@ -338,10 +365,19 @@ table td {
 .slide {
     width: 100%;
     height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-size: cover;
     background-position: center center;
     padding: 50px 0;
@@ -417,14 +453,25 @@ table td {
 }
 
 .popular-courses .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .popular-courses .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 20%;
 }
 
@@ -444,7 +491,8 @@ table td {
 .popular-courses .card-photo img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .popular-courses .card-photo {
@@ -465,14 +513,20 @@ table td {
 }
 
 .advantages-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 90%;
     margin: auto;
 }
 
 .advantages-card {
-    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 30px;
     padding: 0 10px;
@@ -494,15 +548,22 @@ table td {
 .advantages-card span:first-child {
     font-weight: 700;
 }
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HOT BLOCK * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .hot-block {
     padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: #F8F8F8;
     border-left: 4px solid #0FBE7C;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .hot-block h3 {
@@ -517,7 +578,8 @@ table td {
 }
 
 .hot-block div:first-child {
-    flex-basis: 70%;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
     margin-right: 20px;
 }
 
@@ -546,8 +608,13 @@ table td {
 }
 
 .hot-block_sidebar {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .hot-block_sidebar h3 {
@@ -572,6 +639,8 @@ table td {
 }
 
 .home-questions .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -581,7 +650,8 @@ table td {
 }
 
 .home-questions .cards-left {
-    flex-basis: 70%;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
 }
 
 .home-questions .cards-left .card h3 {
@@ -603,6 +673,7 @@ table td {
 .home-questions .cards-left .card a {
     color: #0FBE7C;
 }
+
 .home-questions .cards-left .card ul li {
     padding: 8px 0;
 }
@@ -612,7 +683,8 @@ table td {
 }
 
 .home-questions .cards-right {
-    flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
     padding-left: 15px;
 }
 
@@ -642,6 +714,7 @@ table td {
     color: #0FBE7C;
     font-size: 14px;
 }
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HOME -> FOOTER HERO * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .footer-hero h3 {
@@ -666,9 +739,13 @@ table td {
     border: 1px solid #0FBE7C;
     color: #0FBE7C;
     display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: auto;
     margin-bottom: 50px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -717,8 +794,12 @@ table td {
 
 .page-wrapper {
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .page-title {
@@ -807,8 +888,13 @@ table td {
     max-width: 30%;
     width: 100%;
     padding-left: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .sidebar .search input {
@@ -842,6 +928,7 @@ table td {
 .menu-sidebar ul {
     padding: 0 !important;
 }
+
 .menu-sidebar a {
     color: #0FBE7C;
     display: block;
@@ -906,7 +993,8 @@ table td {
 
 .sertificate-photo img {
     width: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * COURSES * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -930,6 +1018,7 @@ table td {
 .services ul {
     padding: 0;
 }
+
 .services ul li {
     list-style: none;
     font-weight: 700;
@@ -952,7 +1041,7 @@ table td {
     width: 8px;
     height: 8px;
     background: #666666;
-  
+
 }
 
 .gallery-slider .slider-indicator.active {
@@ -962,7 +1051,8 @@ table td {
 .gallery-slider .slider-indicators {
     position: relative;
     top: 10px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .gallery-slider .photography-prev {
@@ -1021,14 +1111,24 @@ table td {
     background: #333333;
     color: #f8f8f8;
     padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .footer .column {
-    flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .footer .column:not(:last-child) {
@@ -1045,6 +1145,8 @@ table td {
 
 .search {
     height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
     border-radius: 3px;
@@ -1053,9 +1155,15 @@ table td {
 .search i {
     height: 35px;
     width: 35px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: #0FBE7C;
     color: #fff;
     cursor: pointer;
@@ -1065,6 +1173,18 @@ table td {
     background: #fff;
     height: 100%;
     padding: 0 1em;
+}
+
+.search input::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+.search input:-ms-input-placeholder {
+    font-size: 14px;
+}
+
+.search input::-ms-input-placeholder {
+    font-size: 14px;
 }
 
 .search input::placeholder {
@@ -1122,16 +1242,21 @@ table td {
 
 @media screen and (max-width: 992px) {
     .footer {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .footer .column {
-        flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         margin-bottom: 30px;
     }
 
     .page-wrapper {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .sidebar {
@@ -1155,6 +1280,8 @@ table td {
 
 @media screen and (max-width: 768px) {
     .btn-bars {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -1166,13 +1293,18 @@ table td {
         display: none;
         position: absolute;
         z-index: 2;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 100%;
         left: 0;
         top: 48px;
         height: auto;
         background: #3A3A3A;
-        align-items: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         padding: 15px 0;
     }
 
@@ -1186,9 +1318,16 @@ table td {
     }
 
     .navbar .menu-item-has-children {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
 
     .navbar .sub-menu {
@@ -1204,6 +1343,7 @@ table td {
         left: 0;
         padding-left: 20px;
     }
+
     .sub-menu li {
         border-bottom: none;
         width: auto;
@@ -1224,38 +1364,68 @@ table td {
     }
 
     .popular-courses .cards {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .popular-courses .card {
-        flex-basis: 44%;
+        -ms-flex-preferred-size: 44%;
+            flex-basis: 44%;
         margin-bottom: 40px;
     }
 
     .advantages-wrapper {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 100%;
     }
 
     .home-questions .cards {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .home-questions .wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .home-questions .cards-right {
+        padding-left: 0;
     }
 
     .footer .column {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         padding-right: 0 !important;
     }
 }
 
 @media screen and (max-width: 660px) {
     .header-middle {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .logo {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
         margin-bottom: 20px;
     }
@@ -1267,14 +1437,18 @@ table td {
     .header-numbers {
         text-align: center;
     }
+
     .language-switcher {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
 @media screen and (max-width: 576px) {
     .popular-courses .card {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     }
 
     .popular-courses .card:not(:last-child) {
@@ -1282,8 +1456,13 @@ table td {
     }
 
     .hot-block {
-        flex-direction: column;
-        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
 
     .hot-block .btn-green {
@@ -1310,9 +1489,16 @@ table td {
     }
 
     .advantages-card {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
     }
 
@@ -1335,6 +1521,7 @@ table td {
         margin-top: 10px;
         padding: 0.5em 2em;
     }
+
     .services img {
         width: 100%;
     }
