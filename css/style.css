@@ -198,6 +198,7 @@ table td {
 .header-middle {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 0;
 }
 
@@ -221,6 +222,7 @@ table td {
     flex-direction: column;
     justify-content: center;
     color: #666666;
+    text-align: right;
 }
 
 .header-numbers span {
@@ -230,6 +232,33 @@ table td {
 .header-numbers .btn-green {
     font-size: 14px;
 }
+
+.language-switcher {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.language-switcher a {
+    margin: 0 10px;
+    min-width: 25px;
+    max-width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    border: 1px solid #666666;
+}
+
+.language-switcher a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER -> NAVBAR * * * * * * * * * * * * * * * * * * * * * * * * * */
 
